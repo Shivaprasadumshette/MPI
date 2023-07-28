@@ -18,7 +18,7 @@ int main(int argc, char** argv) {
     // Each process generates its own array with random values
     srand(rank);
     for (int i = 0; i < array_size; i++) {
-        array[i] = rand() % 10;
+        array[i] = i;
     }
 
     // Compute the local sum

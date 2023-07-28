@@ -13,7 +13,7 @@ int main()
 {
     #pragma omp parallel // This parallel directive start the parallel region by creating (forking) threads
     {
-        printf("\n Hello world"); // This statement gets executed by number of threads available in the parallel region
+        printf("\n Hello world open_mp is working "); // This statement gets executed by number of threads available in the parallel region
     }// Parallel region termibates here and threads get destroyed (Joining)
     return 0;
 }

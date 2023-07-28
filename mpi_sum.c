@@ -34,3 +34,14 @@ int main(int argc, char** argv) {
         printf("Array elements:");
         for (int i = 0; i < array_size; i++) {
             printf(" %d", array[i]);
+        }
+        printf("\n");
+
+        printf("Global sum: %d\n", global_sum);
+    }
+
+    // Finalize MPI
+    MPI_Finalize();
+
+    return 0;
+}
